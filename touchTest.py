@@ -4,21 +4,21 @@ import board
 import neopixel
 
 
-pixel_pin = board.EXTERNAL_NEOPIXEL
-num_pixels = 30
+pixel_pin = board.EXTERNAL_NEOPIXEL #access neopixel
+num_pixels = 30 # number of neopixels
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.3, auto_write=False)
 
 
 
-
-touch_A5 = touchio.TouchIn(board.A5)
+#on touch - sends signal to board
+touch_A5 = touchio.TouchIn(board.A5) 
 touch_A4 = touchio.TouchIn(board.A4)
 touch_A3 = touchio.TouchIn(board.A3)
 touch_A2 = touchio.TouchIn(board.A2)
 
 
 
-
+# rgb colors
 white = (255, 255, 255)
 red = (255, 0, 0)
 blue = (0, 0, 255)
